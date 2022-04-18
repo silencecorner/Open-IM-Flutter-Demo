@@ -99,3 +99,5 @@ flutter_openim_sdk:
 ##### 7，ios运行的最低版本号？
 
 答：11.0
+
+##### 8，[打开热点会连不上模拟器,关闭模拟器解决](https://www.jianshu.com/p/e7a821acb0e9)
