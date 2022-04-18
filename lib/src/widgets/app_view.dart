@@ -22,7 +22,8 @@ class AppView extends StatelessWidget {
           designSize: Size(Config.UI_W, Config.UI_H),
           minTextAdapt: true,
           splitScreenMode: true,
-          builder: () => builder(controller.getLocale(), EasyLoading.init(
+          builder: (context) =>
+              builder(controller.getLocale(), EasyLoading.init(
             builder: (context, widget) {
               ScreenUtil.setContext(context);
               return widget!;
