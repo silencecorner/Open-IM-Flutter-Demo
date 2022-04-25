@@ -39,7 +39,7 @@ class Config {
   static const secret = 'tuoyun';
 
   /// ip
-  static const defaultIp = "121.37.25.71"; //43.128.5.63"; //121.37.25.71
+  static const defaultIp = String.fromEnvironment("SERVER_IP"); //43.128.5.63"; //121.37.25.71
 
   /// 服务器IP
   static String serverIp() {

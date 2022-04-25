@@ -101,3 +101,18 @@ flutter_openim_sdk:
 答：11.0
 
 ##### 8，[打开热点会连不上模拟器,关闭模拟器解决](https://www.jianshu.com/p/e7a821acb0e9)
+
+##### .env配置环境
+###### vscode
+```json
+ "configurations": [
+        {
+            "name": "Open-IM-Flutter-Demo",
+            "request": "launch",
+            "type": "dart",
+            "envFile": "${workspaceFolder}/.env",
+        },
+    ]
+```
+###### idea
+[envfile](https://plugins.jetbrains.com/plugin/7861-envfile)
