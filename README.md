@@ -19,12 +19,11 @@ A OpenIM flutter demo, only support android and ios.
 
 
 ### Source code build (源代码使用)
-
-1. git clone https://github.com/OpenIMSDK/Open-IM-Flutter-Demo.git
-2. modify the server address in [config.dart](https://github.com/OpenIMSDK/Open-IM-Flutter-Demo/blob/master/lib/src/common/config.dart)
-3. flutter pub get
-4. flutter run
-
+```bash
+git clone https://github.com/OpenIMSDK/Open-IM-Flutter-Demo.git
+flutter pub get
+flutter run --dart-define=SERVER_IP=123.56.3.224
+```
 ### Other
 
 [flutter_openim_widget [demo使用的ui库]](https://github.com/hrxiang/flutter_openim_widget.git)
@@ -103,16 +102,18 @@ flutter_openim_sdk:
 ##### 8，[打开热点会连不上模拟器,关闭模拟器解决](https://www.jianshu.com/p/e7a821acb0e9)
 
 ##### .env配置环境
-###### vscode
+###### .vscode/lanch.json
 ```json
- "configurations": [
+{
+    "configurations": [
         {
             "name": "Open-IM-Flutter-Demo",
             "request": "launch",
             "type": "dart",
-            "envFile": "${workspaceFolder}/.env",
+            "args": [
+                "--dart-define=SERVER_IP=123.56.3.224"
+            ]
         },
     ]
+}
 ```
-###### idea
-[envfile](https://plugins.jetbrains.com/plugin/7861-envfile)
