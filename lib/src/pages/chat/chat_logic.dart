@@ -323,7 +323,7 @@ class ChatLogic extends GetxController {
       // 发送 @ 消息
       message = await OpenIM.iMManager.messageManager.createTextAtMessage(
         text: content,
-        atUidList: curMsgAtUser,
+        atUserIDList: curMsgAtUser,
       );
     } else if (quoteMsg != null) {
       // 发送引用消息
